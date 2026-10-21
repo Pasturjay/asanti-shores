@@ -169,6 +169,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/company-profile" className="hover:text-[#D9A441] transition-colors font-medium">
+                  Company Profile (PDF)
+                </Link>
+              </li>
+              <li>
                 <Link href="/safety-compliance" className="hover:text-white transition-colors">
                   Safety & Compliance
                 </Link>

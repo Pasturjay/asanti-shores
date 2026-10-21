@@ -529,7 +529,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="shrink-0">
+              <div className="shrink-0 flex flex-col sm:flex-row items-center gap-3">
                 <a
                   href={siteConfig.downloads.profilePdfUrl}
                   download="asanti-shores-company-profile.pdf"
@@ -538,6 +538,13 @@ export default function HomePage() {
                   <Download className="w-4 h-4" />
                   <span>Download Profile (PDF)</span>
                 </a>
+                <Link
+                  href="/company-profile"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-5 py-3.5 rounded-sm border border-slate-700 transition-colors"
+                >
+                  <span>Explore Online Dossier</span>
+                  <ArrowRight className="w-4 h-4 text-[#D9A441]" />
+                </Link>
               </div>
             </div>
           </div>

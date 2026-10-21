@@ -151,6 +151,7 @@ export const siteConfig = {
       ],
     },
     { label: "Capabilities", href: "/capabilities" },
+    { label: "Company Profile", href: "/company-profile" },
     { label: "Safety & Compliance", href: "/safety-compliance" },
     { label: "Contact Us", href: "/contact" },
   ],
