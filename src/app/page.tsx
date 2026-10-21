@@ -25,6 +25,7 @@ import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ProjectsShowcase } from "@/components/projects/ProjectsShowcase";
 
 export default function HomePage() {
   const capabilityStrip = [
@@ -166,19 +167,19 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative">
               <div className="relative aspect-4/3 rounded-lg overflow-hidden shadow-2xl border border-slate-200">
                 <Image
-                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1200&q=80"
-                  alt="Commercial vessel docking and marine operations coordination"
+                  src="/images/projects/project-10.png"
+                  alt="Asanti Shores field engineers and marine operations team at Lagos operational base"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/80 via-transparent to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-sm bg-[#0B1F33]/90 backdrop-blur-xs border border-slate-700 text-white">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-transparent to-transparent" />
+                <div className="absolute bottom-6 left-6 right-6 p-4 rounded-sm bg-[#0B1F33]/95 backdrop-blur-xs border border-slate-700 text-white">
                   <p className="text-xs uppercase font-bold tracking-widest text-[#D9A441] mb-1">
-                    Operational Base: Kirikiri Town, Lagos
+                    Operational Bases: Kirikiri Town & Defense Jetty, Marina
                   </p>
                   <p className="text-xs text-slate-300">
-                    Direct access to Kirikiri Lighter Terminal, Apapa Quays, and Tin Can Island waterways.
+                    Direct quayside deployment across Kirikiri Lighter Terminal, Apapa Quays, Marina waterways, and offshore fairways.
                   </p>
                 </div>
               </div>
@@ -314,7 +315,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. WHY CHOOSE US */}
+      {/* 5. DELIVERED PROJECTS & FIELD OPERATIONS SHOWCASE */}
+      <section className="py-20 lg:py-28 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Verified Field Execution"
+            title="Delivered Projects & Marine Operations"
+            description="Explore our real-world track record in subsea diving, underwater hull maintenance, wreck salvaging, passenger craft overhaul, and tugboat operations across Lagos and coastal waters."
+            align="center"
+          />
+
+          <ProjectsShowcase />
+        </div>
+      </section>
+
+      {/* 6. WHY CHOOSE US */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading

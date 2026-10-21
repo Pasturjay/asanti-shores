@@ -125,10 +125,10 @@ export default function AboutPage() {
                 </div>
                 <div className="p-4 rounded-sm bg-[#F3F6F8] border border-slate-200">
                   <span className="text-xs text-slate-500 uppercase tracking-wider block font-bold mb-1">
-                    Operating Hub
+                    Operating Bases
                   </span>
-                  <span className="font-heading font-extrabold text-sm text-[#0B1F33]">
-                    Kirikiri Town, Lagos
+                  <span className="font-heading font-extrabold text-xs sm:text-sm text-[#0B1F33]">
+                    Kirikiri & Defense Jetty, Marina
                   </span>
                 </div>
               </div>
@@ -138,8 +138,8 @@ export default function AboutPage() {
             <div className="lg:col-span-5 relative">
               <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl border border-slate-200">
                 <Image
-                  src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80"
-                  alt="Maritime vessel operations and navigation"
+                  src="/images/projects/project-10.png"
+                  alt="Asanti Shores field operations personnel and engineering supervision at Defense Jetty"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover"
@@ -147,10 +147,10 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 p-5 rounded-sm bg-[#0B1F33]/95 border border-slate-700 text-white space-y-2">
                   <h4 className="font-heading font-bold text-base text-[#D9A441]">
-                    Operational Integrity
+                    Field Presence & Subsea Coordination
                   </h4>
                   <p className="text-xs text-slate-300 leading-relaxed">
-                    We strictly uphold Nigerian local content provisions and statutory Cabotage requirements, ensuring seamless clearance with NIMASA and Nigerian Ports Authority.
+                    With direct operations at Defense Jetty, Marina, Lagos and Kirikiri Town, our commercial diving and vessel support crews mobilize rapidly across Lagos waters and offshore terminals.
                   </p>
                 </div>
               </div>

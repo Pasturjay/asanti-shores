@@ -1,14 +1,29 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface LogoProps {
   variant?: "light" | "dark";
   className?: string;
   showTagline?: boolean;
+  logoType?: "ship" | "anchor" | "dual";
+  size?: "sm" | "md" | "lg";
 }
 
-export function Logo({ variant = "dark", className = "", showTagline = true }: LogoProps) {
+export function Logo({
+  variant = "dark",
+  className = "",
+  showTagline = true,
+  logoType = "ship",
+  size = "md",
+}: LogoProps) {
   const isLight = variant === "light";
+
+  const sizeClasses = {
+    sm: { img: "w-8 h-8", text: "text-lg", tag: "text-[8px]" },
+    md: { img: "w-11 h-11", text: "text-xl", tag: "text-[9px]" },
+    lg: { img: "w-14 h-14", text: "text-2xl", tag: "text-[10px]" },
+  }[size];
 
   return (
     <Link
@@ -16,69 +31,68 @@ export function Logo({ variant = "dark", className = "", showTagline = true }: L
       className={`inline-flex items-center gap-3 group focus:outline-hidden focus:ring-2 focus:ring-[#D9A441] rounded-sm transition-opacity duration-200 ${className}`}
       aria-label="Asanti Shores Limited - Return to homepage"
     >
-      {/* Brand Emblem: Stylized Maritime Vector Insignia */}
-      <div className="relative w-10 h-10 shrink-0 flex items-center justify-center">
-        <svg
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-full transform transition-transform group-hover:scale-105 duration-300"
-          aria-hidden="true"
+      {/* Brand Emblem: Authentic Company Logo */}
+      <div className="relative flex items-center gap-1.5 shrink-0">
+        <div
+          className={`relative ${sizeClasses.img} rounded-full overflow-hidden flex items-center justify-center p-0.5 transition-transform duration-300 group-hover:scale-105 shadow-xs ${
+            isLight
+              ? "bg-white border border-[#D9A441]/60"
+              : "bg-white border border-slate-200"
+          }`}
         >
-          {/* Outer Compass / Shield Circle */}
-          <circle
-            cx="24"
-            cy="24"
-            r="22"
-            stroke={isLight ? "#D9A441" : "#0B1F33"}
-            strokeWidth="2"
-            strokeOpacity={isLight ? "0.9" : "0.2"}
-            fill={isLight ? "#0B1F33" : "#F3F6F8"}
+          <Image
+            src={
+              logoType === "anchor"
+                ? "/images/brand/logo-anchor.png"
+                : "/images/brand/logo-ship.png"
+            }
+            alt="Asanti Shores Limited Official Logo"
+            width={56}
+            height={56}
+            className="w-full h-full object-contain"
+            priority
           />
-          {/* Marine Anchor & Wave Geometry */}
-          <path
-            d="M24 10V32M24 32C19 32 15 28 15 23M24 32C29 32 33 28 33 23"
-            stroke="#D9A441"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <circle cx="24" cy="14" r="3" stroke="#D9A441" strokeWidth="2" />
-          <path
-            d="M19 18H29"
-            stroke="#D9A441"
-            strokeWidth="2.2"
-            strokeLinecap="round"
-          />
-          {/* Dynamic Ocean Wave Accent */}
-          <path
-            d="M12 36C16 33.5 20 37.5 24 35C28 32.5 32 36.5 36 34"
-            stroke={isLight ? "#167D91" : "#167D91"}
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
+        </div>
+
+        {/* Dual Emblem Option (displays anchor badge alongside ship) */}
+        {logoType === "dual" && (
+          <div
+            className={`relative w-8 h-8 rounded-full overflow-hidden flex items-center justify-center p-0.5 -ml-3 z-10 transition-transform duration-300 group-hover:scale-105 shadow-xs ${
+              isLight
+                ? "bg-white border border-[#D9A441]"
+                : "bg-white border border-slate-300"
+            }`}
+          >
+            <Image
+              src="/images/brand/logo-anchor.png"
+              alt="Asanti Shores Marine Anchor Badge"
+              width={32}
+              height={32}
+              className="w-full h-full object-contain"
+            />
+          </div>
+        )}
       </div>
 
       {/* Brand Typography */}
       <div className="flex flex-col text-left">
         <div className="flex items-center gap-1.5">
           <span
-            className={`font-heading font-extrabold text-xl tracking-tight leading-none ${
+            className={`font-heading font-extrabold ${sizeClasses.text} tracking-tight leading-none ${
               isLight ? "text-white" : "text-[#0B1F33]"
             }`}
           >
             ASANTI
           </span>
           <span
-            className="font-heading font-bold text-xl tracking-tight leading-none text-[#D9A441]"
+            className={`font-heading font-bold ${sizeClasses.text} tracking-tight leading-none text-[#D9A441]`}
           >
             SHORES
           </span>
         </div>
         {showTagline && (
           <span
-            className={`text-[9px] font-semibold tracking-[0.18em] uppercase leading-tight mt-1 ${
+            className={`${sizeClasses.tag} font-semibold tracking-[0.18em] uppercase leading-tight mt-1 ${
               isLight ? "text-slate-300" : "text-[#596979]"
             }`}
           >

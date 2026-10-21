@@ -60,7 +60,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Column 1: Company Info */}
           <div className="lg:col-span-2 space-y-4">
-            <Logo variant="light" />
+            <Logo variant="light" logoType="dual" />
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mt-4">
               {siteConfig.description}
             </p>
@@ -204,9 +204,12 @@ export function Footer() {
             <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D9A441] shrink-0 mt-0.5" />
-                <span className="text-slate-300 leading-relaxed">
+                <div className="text-slate-300 leading-relaxed text-xs">
+                  <strong className="text-white block">Headquarters:</strong>
                   {siteConfig.contact.address.full}
-                </span>
+                  <strong className="text-white block mt-1.5">Site / Jetty Base:</strong>
+                  Defense Jetty, Marina, Lagos State, Nigeria
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#D9A441] shrink-0" />

@@ -104,7 +104,7 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Logo variant="light" />
+            <Logo variant="light" logoType="dual" />
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center gap-1 xl:gap-2">

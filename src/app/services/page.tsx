@@ -15,6 +15,7 @@ import { servicesData } from "@/config/services";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ProjectsShowcase } from "@/components/projects/ProjectsShowcase";
 
 export const metadata: Metadata = {
   title: "Marine Services & Offshore Support Directory",
@@ -142,6 +143,20 @@ export default function ServicesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Field Operations & Project Track Record */}
+      <section className="py-20 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Demonstrated Execution"
+            title="Delivered Marine Contracts & Field Proof"
+            description="Inspect genuine photographic documentation of our delivered assignments, covering subsea diving, channel salvaging, vessel overhauls, and tugboat operations in Nigerian waters."
+            align="center"
+          />
+
+          <ProjectsShowcase />
         </div>
       </section>
 

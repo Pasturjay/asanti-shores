@@ -20,6 +20,7 @@ import { servicesData } from "@/config/services";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { ServiceFaqAccordion } from "@/components/services/ServiceFaqAccordion";
+import { deliveredProjects } from "@/config/projects";
 
 interface ServicePageProps {
   params: Promise<{ slug: string }>;
@@ -73,6 +74,21 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     { label: "Services", href: "/services" },
     { label: service.title, href: `/services/${service.slug}` },
   ];
+
+  const categoryMap: Record<string, string[]> = {
+    "underwater-services": ["underwater", "salvage"],
+    "tugboats-barges-hire": ["tugs-barges", "salvage"],
+    "service-boats-logistics": ["ferry-speedboats", "site-operations"],
+    "marine-equipment-supply": ["underwater", "tugs-barges"],
+    "ship-crew-management": ["site-operations", "ferry-speedboats"],
+    "bunker-fresh-water-supply": ["tugs-barges", "site-operations"],
+    "ship-chandling": ["tugs-barges", "ferry-speedboats"],
+  };
+
+  const matchingCategories = categoryMap[service.slug] || ["site-operations"];
+  const relatedProjects = deliveredProjects
+    .filter((p) => matchingCategories.includes(p.category))
+    .slice(0, 4);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -225,6 +241,45 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
                   {service.operationalCoverage}
                 </p>
               </div>
+
+              {/* Related Field Deliveries & Real Operational Proof */}
+              {relatedProjects.length > 0 && (
+                <div className="pt-2">
+                  <h3 className="font-heading font-extrabold text-2xl text-[#0B1F33] mb-4 flex items-center gap-2">
+                    <ShieldCheck className="w-6 h-6 text-[#167D91]" />
+                    <span>Delivered Projects & Field Proof</span>
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {relatedProjects.map((proj) => (
+                      <div
+                        key={proj.id}
+                        className="rounded-md border border-slate-200 overflow-hidden bg-[#F3F6F8] flex flex-col justify-between group hover:border-[#167D91] transition-all"
+                      >
+                        <div className="relative h-44 w-full bg-slate-900">
+                          <Image
+                            src={proj.image}
+                            alt={proj.title}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/80 via-transparent to-transparent" />
+                          <span className="absolute bottom-2 left-2 px-2 py-0.5 bg-black/70 rounded-xs text-[#D9A441] text-[10px] font-bold uppercase tracking-wider">
+                            {proj.location}
+                          </span>
+                        </div>
+                        <div className="p-4 flex-1 flex flex-col justify-between">
+                          <h4 className="font-heading font-bold text-sm text-[#0B1F33] leading-snug mb-1">
+                            {proj.title}
+                          </h4>
+                          <p className="text-xs text-[#596979] line-clamp-2">
+                            {proj.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* FAQs Section */}
               {service.faqs && service.faqs.length > 0 && (

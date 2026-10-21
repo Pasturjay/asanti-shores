@@ -19,11 +19,12 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ProjectsShowcase } from "@/components/projects/ProjectsShowcase";
 
 export const metadata: Metadata = {
   title: "Marine Capabilities & Fleet Logistics | Nigerian Ports",
   description:
-    "Explore Asanti Shores Limited marine capabilities: harbor and ocean tugboats, cargo barges, diving services, bunkering coordination, and port logistics across Nigeria.",
+    "Explore Asanti Shores Limited marine capabilities: harbor and ocean tugboats, cargo barges, diving services, salvage, passenger craft repairs, and port logistics across Nigeria.",
 };
 
 export default function CapabilitiesPage() {
@@ -35,24 +36,45 @@ export default function CapabilitiesPage() {
       specs: "BHP range up to 4,000+ BHP • Twin Screw & Azimuth Stern Drive (ASD) arrangements",
       scope:
         "Berthing assistance, coastal barge towing, rig moves, and emergency standby towage in Lagos, Onne, and Delta waterways.",
-      status: "Partner & Chartered Vessels",
+      status: "Operational Fleet",
+      image: "/images/projects/project-3.png",
       icon: Compass,
     },
     {
       title: "Deck Cargo & Ramp Barges",
       specs: "Deadweight capacity 1,000 – 5,000 DWT • Flat top and spud barge configurations",
       scope:
-        "Transport of heavy machinery, tubulars, containers, aggregate, and project cargo between Kirikiri, Warri, and offshore locations.",
+        "Transport of heavy machinery, tubulars, containers, aggregate, and scrap metal between Kirikiri, Warri, and offshore locations.",
       status: "Charter Fleet",
+      image: "/images/projects/project-11.png",
       icon: Ship,
     },
     {
-      title: "Crew Transfer Vessels (CTV) & Service Boats",
+      title: "Crew Transfer Vessels (CTV) & Speed Boats",
       specs: "High-speed monohull & catamaran hulls • Passenger capacity 12 – 40 personnel",
       scope:
-        "Safe crew rotation, superintendent transport, offshore field logistics, and security liaison in coastal waters.",
+        "Safe crew rotation, superintendent transport, offshore field logistics, passenger ferry repair, and security liaison in coastal waters.",
       status: "Operational Fleet",
+      image: "/images/projects/project-4.png",
       icon: Navigation,
+    },
+    {
+      title: "Commercial Diving & Subsea Spreads",
+      specs: "Surface-supplied air diving panels, high-pressure compressors, hydraulic rotary brushes",
+      scope:
+        "Class In-Water Surveys (IWS), hull cleaning, propeller polishing, underwater welding, and oxy-arc burning operations.",
+      status: "Subsea Division",
+      image: "/images/projects/project-2.png",
+      icon: LifeBuoy,
+    },
+    {
+      title: "Marine Salvage & Wreck Removal Gear",
+      specs: "Heavy crane barges, salvage pumps, dewatering equipment, lifting rigging",
+      scope:
+        "Rigging and recovery of sunken hulls, channel clearance, and scrap metal dismantling in Nigerian ports.",
+      status: "Specialized Plant",
+      image: "/images/projects/project-1.png",
+      icon: Wrench,
     },
     {
       title: "Water & Fuel Bunker Barges",
@@ -60,6 +82,7 @@ export default function CapabilitiesPage() {
       scope:
         "Delivery of fresh potable water and marine gas oil (MGO) directly to vessels at berth or offshore anchorage.",
       status: "Supply Network",
+      image: "/images/projects/project-15.png",
       icon: Fuel,
     },
   ];
@@ -70,8 +93,8 @@ export default function CapabilitiesPage() {
       <section className="relative bg-[#071524] text-white py-16 sm:py-24 border-b border-slate-800">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=2000&q=80"
-            alt="Offshore supply vessels and tugboats in commercial operations"
+            src="/images/projects/project-3.png"
+            alt="Asanti Shores tugboat and marine logistics fleet"
             fill
             priority
             className="object-cover opacity-20 filter brightness-90"
@@ -90,7 +113,7 @@ export default function CapabilitiesPage() {
               Marine Capabilities & Operational Resources
             </h1>
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed">
-              Delivering verified marine logistics, technical vessel management, qualified equipment sourcing, and port turnaround execution across Nigeria.
+              Delivering verified marine logistics, commercial diving, salvage, vessel husbanding, and port turnaround execution across Nigeria.
             </p>
           </div>
         </div>
@@ -106,35 +129,50 @@ export default function CapabilitiesPage() {
             align="left"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {vesselCategories.map((vessel) => {
               const Icon = vessel.icon;
               return (
                 <div
                   key={vessel.title}
-                  className="p-8 rounded-lg border border-slate-200/90 bg-[#F3F6F8] hover:border-[#167D91] transition-all space-y-4"
+                  className="rounded-lg border border-slate-200/90 bg-[#F3F6F8] hover:border-[#167D91] transition-all overflow-hidden flex flex-col justify-between shadow-xs hover:shadow-md"
                 >
-                  <div className="flex items-start justify-between">
-                    <div className="w-12 h-12 rounded-sm bg-[#0B1F33] text-[#D9A441] flex items-center justify-center">
-                      <Icon className="w-6 h-6" />
-                    </div>
-                    <span className="text-xs font-bold px-2.5 py-1 rounded-xs bg-white border border-slate-200 text-slate-700">
+                  <div className="relative h-48 w-full bg-slate-900">
+                    <Image
+                      src={vessel.image}
+                      alt={vessel.title}
+                      fill
+                      className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/80 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 text-xs font-bold px-2.5 py-1 rounded-xs bg-[#0B1F33]/90 text-[#D9A441] border border-slate-700">
                       {vessel.status}
                     </span>
                   </div>
 
-                  <div>
-                    <h3 className="font-heading font-bold text-xl text-[#0B1F33]">
-                      {vessel.title}
-                    </h3>
-                    <p className="text-xs font-semibold text-[#167D91] mt-1">
-                      {vessel.specs}
-                    </p>
-                  </div>
+                  <div className="p-6 flex-1 flex flex-col justify-between space-y-3">
+                    <div>
+                      <h3 className="font-heading font-bold text-lg text-[#0B1F33]">
+                        {vessel.title}
+                      </h3>
+                      <p className="text-xs font-semibold text-[#167D91] mt-1">
+                        {vessel.specs}
+                      </p>
+                      <p className="text-xs sm:text-sm text-[#596979] leading-relaxed mt-2">
+                        {vessel.scope}
+                      </p>
+                    </div>
 
-                  <p className="text-sm text-[#596979] leading-relaxed">
-                    {vessel.scope}
-                  </p>
+                    <div className="pt-3 border-t border-slate-200/80">
+                      <Link
+                        href={`/request-a-quote?service=${encodeURIComponent(vessel.title)}`}
+                        className="text-xs font-bold uppercase tracking-wider text-[#167D91] hover:text-[#0B1F33] inline-flex items-center gap-1"
+                      >
+                        <span>Charter or Quote</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               );
             })}
@@ -149,21 +187,35 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      {/* 2. Strategic Port Coverage Breakdown */}
-      <section className="py-20 bg-[#F3F6F8] border-t border-slate-200">
+      {/* 2. Real Delivered Field Projects Section */}
+      <section className="py-20 bg-[#F3F6F8] border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Port Network"
+            eyebrow="Real-World Performance"
+            title="Field Operations & Delivered Contracts"
+            description="View documented photographic records of our maritime jobs completed on Nigerian waterways, including subsea diving, channel salvage, passenger ferry repairs, and cargo barging."
+            align="center"
+          />
+
+          <ProjectsShowcase />
+        </div>
+      </section>
+
+      {/* 3. Strategic Port Coverage Breakdown */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Port Network & Bases"
             title="Comprehensive Nigerian Port & Terminal Coverage"
             description="Our operations coordinators maintain active local relationships across commercial port complexes, coastal channels, and offshore transshipment anchorages."
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {siteConfig.operationalHubs.map((hub) => (
               <div
                 key={hub.name}
-                className="bg-white p-6 rounded-md border border-slate-200 shadow-xs flex flex-col justify-between"
+                className="bg-[#F3F6F8] p-6 rounded-md border border-slate-200 shadow-xs flex flex-col justify-between"
               >
                 <div>
                   <div className="w-8 h-8 rounded-full bg-[#167D91]/10 text-[#167D91] flex items-center justify-center mb-3">
@@ -172,10 +224,10 @@ export default function CapabilitiesPage() {
                   <h4 className="font-heading font-bold text-base text-[#0B1F33] mb-1">
                     {hub.name}
                   </h4>
-                  <p className="text-xs text-slate-500 font-medium">State: {hub.state}</p>
+                  <p className="text-xs text-slate-500 font-medium">Region: {hub.state}</p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-slate-100 text-xs text-[#596979]">
-                  Available: Chandling • Crew • Bunkering • Tugs
+                <div className="mt-4 pt-3 border-t border-slate-200 text-xs text-[#596979]">
+                  Available: Chandling • Diving • Crew • Bunkering • Tugs
                 </div>
               </div>
             ))}
@@ -183,8 +235,8 @@ export default function CapabilitiesPage() {
         </div>
       </section>
 
-      {/* 3. Technical Personnel & Operational Standards */}
-      <section className="py-20 bg-white border-t border-slate-200">
+      {/* 4. Technical Personnel & Operational Standards */}
+      <section className="py-20 bg-[#F3F6F8] border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-6 space-y-6">
@@ -207,7 +259,7 @@ export default function CapabilitiesPage() {
                   <CheckCircle2 className="w-5 h-5 text-[#D9A441] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#0B1F33] block">Class-Certified Commercial Divers:</strong>
-                    Underwater hull cleaning and CCTV in-water surveys performed by certified diving teams adhering to international diving safety guidelines.
+                    Underwater hull cleaning, subsea oxy-arc cutting, and CCTV in-water surveys performed by certified diving teams.
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -228,8 +280,8 @@ export default function CapabilitiesPage() {
 
             <div className="lg:col-span-6 relative aspect-4/3 rounded-lg overflow-hidden shadow-xl border border-slate-200">
               <Image
-                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80"
-                alt="Technical port operations and container vessel inspection"
+                src="/images/projects/project-10.png"
+                alt="Asanti Shores on-site engineering team and diving supervisors at Defense Jetty Marina"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -246,7 +298,7 @@ export default function CapabilitiesPage() {
             Verify Specific Equipment or Vessel Availability
           </h2>
           <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
-            Contact our operations coordinators with your specific project scope, tug BHP requirement, or barge tonnage.
+            Contact our operations coordinators with your specific project scope, tug BHP requirement, or commercial dive window.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <Button href="/request-a-quote" variant="primary" size="lg">

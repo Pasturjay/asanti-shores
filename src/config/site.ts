@@ -22,6 +22,7 @@ export const siteConfig = {
       state: "Lagos State",
       country: "Nigeria",
       full: "Shop 04, Prowa International Shopping Complex, Opp. Kirikiri Police Station, Kirikiri Town, Lagos, Nigeria",
+      siteAddress: "Defense Jetty, Marina, Lagos State, Nigeria",
     },
     operatingHours: "Monday – Saturday: 08:00 – 18:00 (24/7 On-Call Marine Coordination)",
     whatsapp: {
@@ -33,6 +34,7 @@ export const siteConfig = {
 
   // Operational Coverage & Supported Ports in Nigeria
   operationalHubs: [
+    { name: "Defense Jetty, Marina", state: "Lagos (Operations Base)" },
     { name: "Lagos Port Complex (Apapa)", state: "Lagos" },
     { name: "Tin Can Island Port", state: "Lagos" },
     { name: "Kirikiri Lighter Terminal", state: "Lagos" },

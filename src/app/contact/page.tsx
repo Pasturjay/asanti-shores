@@ -73,10 +73,16 @@ export default function ContactPage() {
                     <MapPin className="w-5 h-5 text-[#D9A441] shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-white text-xs uppercase tracking-wider mb-0.5">
-                        Operating Address:
+                        Headquarters Office:
                       </strong>
-                      <span className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      <span className="text-slate-300 text-xs sm:text-sm leading-relaxed block">
                         {siteConfig.contact.address.full}
+                      </span>
+                      <strong className="block text-white text-xs uppercase tracking-wider mt-2 mb-0.5">
+                        Site & Maritime Field Base:
+                      </strong>
+                      <span className="text-slate-300 text-xs sm:text-sm leading-relaxed block">
+                        Defense Jetty, Marina, Lagos State, Nigeria
                       </span>
                     </div>
                   </div>
