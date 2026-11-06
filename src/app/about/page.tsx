@@ -140,7 +140,7 @@ export default function AboutPage() {
               <div className="relative aspect-4/5 rounded-lg overflow-hidden shadow-2xl border border-slate-200">
                 <Image
                   src="/images/projects/project-10.png"
-                  alt="Asanti Shores field operations personnel and engineering supervision at Defense Jetty"
+                  alt="Asanti Shores Limited field operations personnel and engineering supervision at Defense Jetty"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover"

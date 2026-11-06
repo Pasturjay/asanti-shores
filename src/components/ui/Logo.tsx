@@ -65,7 +65,7 @@ export function Logo({
           >
             <Image
               src="/images/brand/logo-anchor.png"
-              alt="Asanti Shores Marine Anchor Badge"
+              alt="Asanti Shores Limited Marine Anchor Badge"
               width={32}
               height={32}
               className="w-full h-full object-contain"
@@ -76,7 +76,7 @@ export function Logo({
 
       {/* Brand Typography */}
       <div className="flex flex-col text-left">
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-baseline gap-1.5 flex-wrap">
           <span
             className={`font-heading font-extrabold ${sizeClasses.text} tracking-tight leading-none ${
               isLight ? "text-white" : "text-[#0B1F33]"
@@ -89,14 +89,21 @@ export function Logo({
           >
             SHORES
           </span>
+          <span
+            className={`font-heading font-extrabold text-xs sm:text-sm tracking-wider uppercase leading-none ${
+              isLight ? "text-slate-200" : "text-[#0B1F33]"
+            }`}
+          >
+            LIMITED
+          </span>
         </div>
         {showTagline && (
           <span
             className={`${sizeClasses.tag} font-semibold tracking-[0.18em] uppercase leading-tight mt-1 ${
-              isLight ? "text-slate-300" : "text-[#596979]"
+              isLight ? "text-[#D9A441]" : "text-[#167D91]"
             }`}
           >
-            Maritime Services Ltd
+            Maritime Services & Logistics
           </span>
         )}
       </div>

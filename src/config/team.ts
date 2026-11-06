@@ -44,7 +44,7 @@ export const teamData = {
       role: "Marine Logistics & Fleet Operations Lead",
       department: "Harbor Logistics & Tugboat Dispatch",
       image: "/images/team/team-8.png",
-      alt: "Asanti Shores Operations Supervisor in branded high-visibility safety vest and hardhat",
+      alt: "Asanti Shores Limited Operations Supervisor in branded high-visibility safety vest and hardhat",
       bio: "Coordinates daily tugboat assignments, cargo barge movements, berth schedules, and channel navigation logistics across Lagos, Onne, and Delta ports.",
       credentials: ["Harbor Towage Liaison", "Deck Cargo Logistics", "24/7 Operations Desk"],
     },
@@ -54,7 +54,7 @@ export const teamData = {
       role: "Field Safety & Regulatory Compliance Coordinator",
       department: "Health, Safety & Environment (HSE)",
       image: "/images/team/team-4.png",
-      alt: "Asanti Shores HSE Officer in full personal protective equipment (PPE) and impact hardhat",
+      alt: "Asanti Shores Limited HSE Officer in full personal protective equipment (PPE) and impact hardhat",
       bio: "Enforces mandatory 100% PPE adherence, conducts pre-task risk assessments, and oversees statutory compliance with NIMASA and IMO ISM/ISPS frameworks.",
       credentials: ["Certified Safety Lead", "Risk Assessment Supervision", "Stop Work Authority"],
     },
@@ -64,7 +64,7 @@ export const teamData = {
       role: "Subsea Diving & Marine Engineering Lead",
       department: "Technical Services & Subsea Works",
       image: "/images/team/team-6.png",
-      alt: "Asanti Shores Technical Superintendent in branded company safety gear",
+      alt: "Asanti Shores Limited Technical Superintendent in branded company safety gear",
       bio: "Directs commercial diving teams, in-water surveys (IWS), hull maintenance, propeller polishing, and passenger ferry repair operations.",
       credentials: ["Subsea Diving Spreads", "Hull Maintenance Oversight", "Class Inspection Liaison"],
     },
@@ -74,7 +74,7 @@ export const teamData = {
       role: "Port Clearance & Vessel Husbandry Officer",
       department: "Vessel Husbanding & Documentation",
       image: "/images/team/team-7.png",
-      alt: "Asanti Shores Port Liaison Officer in company safety vest",
+      alt: "Asanti Shores Limited Port Liaison Officer in company safety vest",
       bio: "Manages customs, immigration, port health, and NPA documentation for calling commercial vessels, ensuring expedited turnaround and berth clearance.",
       credentials: ["Statutory Port Clearance", "STCW Crew Transfer", "Immigration & Customs Desk"],
     },
@@ -84,7 +84,7 @@ export const teamData = {
       role: "Marine Chandling & Provisions Coordinator",
       department: "Procurement & Offshore Supply",
       image: "/images/team/team-9.png",
-      alt: "Asanti Shores Chandling & Supply Coordinator in branded PPE",
+      alt: "Asanti Shores Limited Chandling & Supply Coordinator in branded PPE",
       bio: "Supervises procurement, cold-chain logistics, fresh food provisioning, bonded stores, and certified technical marine equipment deliveries directly to vessel decks.",
       credentials: ["ISSA / IMPA Standard Fulfillment", "Bunker Coordination", "Potable Water Supply"],
     },
@@ -92,7 +92,7 @@ export const teamData = {
   groupGalleries: [
     {
       id: "group-full-crew",
-      title: "Asanti Shores Operational Team & Field Crew",
+      title: "Asanti Shores Limited Operational Team & Field Crew",
       caption:
         "The Managing Director and operations personnel in official Asanti Shores Limited branded safety vests and helmets, demonstrating company pride and unity.",
       image: "/images/team/team-1.png",
@@ -104,7 +104,7 @@ export const teamData = {
       caption:
         "On-site operational staff equipped with standard-issue high-vis gear, ready for rapid mobilization across Lagos ports and offshore jetties.",
       image: "/images/team/team-5.png",
-      alt: "Asanti Shores field technical personnel in company work clothes and safety equipment",
+      alt: "Asanti Shores Limited field technical personnel in company work clothes and safety equipment",
     },
     {
       id: "group-operations-review",
@@ -112,7 +112,7 @@ export const teamData = {
       caption:
         "Operational team members aligned on project deliverables, safety standards, and vessel schedule execution.",
       image: "/images/team/team-2.png",
-      alt: "Asanti Shores team members in branded safety work clothes",
+      alt: "Asanti Shores Limited team members in branded safety work clothes",
     },
   ],
 };

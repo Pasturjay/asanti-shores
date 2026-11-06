@@ -70,7 +70,7 @@ export const siteConfig = {
     whatsapp: {
       enabled: true,
       number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2349162599586",
-      defaultMessage: "Hello Asanti Shores, I would like to make an enquiry regarding marine services.",
+      defaultMessage: "Hello Asanti Shores Limited, I would like to make an enquiry regarding marine services.",
     },
   },
 
@@ -144,7 +144,7 @@ export const siteConfig = {
   downloads: {
     hasProfilePdf: true,
     profilePdfUrl: "/downloads/asanti-shores-company-profile.pdf",
-    profilePdfTitle: "Asanti Shores Corporate Profile (PDF)",
+    profilePdfTitle: "Asanti Shores Limited Corporate Profile (PDF)",
   },
 
   // Navigation Links

@@ -130,7 +130,7 @@ export async function POST(req: NextRequest) {
             Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
           },
           body: JSON.stringify({
-            from: "Asanti Shores Portal <quotes@asantishores.com>",
+            from: "Asanti Shores Limited <asantishores@gmail.com>",
             to: [recipientEmail],
             reply_to: businessEmail,
             subject: `[New Marine Quote Request] ${serviceRequired} - ${companyName}`,
@@ -169,7 +169,7 @@ ${message || "N/A"}
     return NextResponse.json({
       success: true,
       message:
-        "Thank you. Your commercial quotation enquiry has been registered with the Asanti Shores operations team. We will review the specifications and respond promptly.",
+        "Thank you. Your commercial quotation enquiry has been registered with the Asanti Shores Limited operations team. We will review the specifications and respond promptly.",
       referenceId: quoteRecord.id,
     });
   } catch (error) {

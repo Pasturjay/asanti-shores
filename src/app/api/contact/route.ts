@@ -96,7 +96,7 @@ export async function POST(req: NextRequest) {
             Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
           },
           body: JSON.stringify({
-            from: "Asanti Shores Contact <contact@asantishores.com>",
+            from: "Asanti Shores Limited <asantishores@gmail.com>",
             to: [recipientEmail],
             reply_to: businessEmail,
             subject: `[Contact Form Enquiry] ${contactRecord.subject} - ${contactRecord.fullName}`,

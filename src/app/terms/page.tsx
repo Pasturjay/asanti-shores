@@ -34,7 +34,7 @@ export default function TermsPage() {
                 1. General Overview
               </h2>
               <p>
-                These terms govern the use of the website operated by {siteConfig.legalName} (&quot;Asanti Shores&quot;) and define the commercial principles under which quotation requests, agency representations, and marine logistics proposals are submitted.
+                These terms govern the use of the website operated by {siteConfig.legalName} (&quot;Asanti Shores Limited&quot;) and define the commercial principles under which quotation requests, agency representations, and marine logistics proposals are submitted.
               </p>
             </div>
 

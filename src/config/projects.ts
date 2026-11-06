@@ -117,7 +117,7 @@ export const deliveredProjects: ProjectItem[] = [
     image: "/images/projects/project-10.png",
     location: "Defense Jetty, Marina / Kirikiri Town, Lagos",
     description:
-      "Asanti Shores operations management, diving supervisors, and field technicians on-site supervising marine logistics and equipment maintenance.",
+      "Asanti Shores Limited operations management, diving supervisors, and field technicians on-site supervising marine logistics and equipment maintenance.",
     highlights: ["On-site marine supervision", "Direct vessel liaison", "24/7 emergency readiness"],
   },
   {

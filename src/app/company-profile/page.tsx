@@ -97,7 +97,7 @@ export default function CompanyProfilePage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/projects/project-3.png"
-            alt="Asanti Shores maritime fleet and field operations"
+            alt="Asanti Shores Limited maritime fleet and field operations"
             fill
             priority
             className="object-cover opacity-20 filter brightness-90"
@@ -157,7 +157,7 @@ export default function CompanyProfilePage() {
                   <strong className="text-[#0B1F33]">{siteConfig.legalName}</strong> is an incorporated Nigerian maritime support, vessel husbanding, and marine engineering contractor (RC: {siteConfig.rcNumber}) with operational headquarters located in Kirikiri Town, Lagos, and an active maritime field operations base at Defense Jetty, Marina, Lagos.
                 </p>
                 <p>
-                  The company was established to bridge the gap between rigorous international maritime standards and local operating realities across Nigerian territorial waters. Recognizing that unnecessary port delays and demurrage incur severe commercial costs, Asanti Shores provides integrated solutions encompassing technical ship management, certified STCW crewing, ship chandling, high-grade bunkering coordination, commercial diving, salvage operations, and marine equipment provisioning.
+                  The company was established to bridge the gap between rigorous international maritime standards and local operating realities across Nigerian territorial waters. Recognizing that unnecessary port delays and demurrage incur severe commercial costs, Asanti Shores Limited provides integrated solutions encompassing technical ship management, certified STCW crewing, ship chandling, high-grade bunkering coordination, commercial diving, salvage operations, and marine equipment provisioning.
                 </p>
                 <p>
                   With disciplined execution, proactive port authority liaison, and 24/7 responsiveness, our operations ensure vessels calling Nigerian ports and offshore energy installations complete their turnarounds safely, on budget, and on schedule.
@@ -195,7 +195,7 @@ export default function CompanyProfilePage() {
                   <div className="w-10 h-10 rounded-full bg-white p-1 shrink-0">
                     <Image
                       src="/images/brand/logo-ship.png"
-                      alt="Asanti Shores Logo"
+                      alt="Asanti Shores Limited Logo"
                       width={40}
                       height={40}
                       className="object-contain"
@@ -211,7 +211,7 @@ export default function CompanyProfilePage() {
                 <div className="w-10 h-10 rounded-full bg-white p-1 shrink-0">
                   <Image
                     src="/images/brand/logo-anchor.png"
-                    alt="Asanti Shores Anchor Badge"
+                    alt="Asanti Shores Limited Anchor Badge"
                     width={40}
                     height={40}
                     className="object-contain"
@@ -340,7 +340,7 @@ export default function CompanyProfilePage() {
               <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
                 <Image
                   src="/images/team/team-1.png"
-                  alt="Asanti Shores Operations Team in Branded Company Workwear and Hardhats"
+                  alt="Asanti Shores Limited Operations Team in Branded Company Workwear and Hardhats"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover object-center"

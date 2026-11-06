@@ -160,7 +160,7 @@ export function Footer() {
             <ul className="space-y-2.5 text-sm">
               <li>
                 <Link href="/about" className="hover:text-white transition-colors">
-                  About Asanti Shores
+                  About Asanti Shores Limited
                 </Link>
               </li>
               <li>

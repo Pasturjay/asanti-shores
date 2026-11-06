@@ -11,7 +11,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Delivering dependable vessel management, certified marine crew support, and regulatory compliance tailored for Nigerian ports and offshore operations.",
     image: "/images/projects/project-10.png",
-    altText: "Asanti Shores technical crew and marine operations management on site",
+    altText: "Asanti Shores Limited technical crew and marine operations management on site",
     overview: [
       "Asanti Shores Limited provides structured ship and crew management support tailored to the regulatory and operational realities of Nigerian territorial waters and offshore fields.",
       "Our team coordinates with vessel owners, managers, and charterers to ensure that vessels remain seaworthy, properly manned, and compliant with national and international maritime standards.",
@@ -89,7 +89,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Supplying merchant vessels, offshore supply units, and tankers with fresh provisions, bonded goods, and technical shipboard stores.",
     image: "/images/projects/project-11.png",
-    altText: "Asanti Shores ship chandling, deck supply, and cargo transport operations",
+    altText: "Asanti Shores Limited ship chandling, deck supply, and cargo transport operations",
     overview: [
       "Asanti Shores Limited delivers high-standard ship chandling services to commercial vessels calling at Nigerian ports and offshore anchorages.",
       "We understand that quick port turnarounds require precision, prompt delivery, and uncompromised food safety and quality standards.",
@@ -168,7 +168,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Reliable procurement and timely delivery of critical deck, engine, safety, and navigation components for vessels and offshore installations.",
     image: "/images/projects/project-12.png",
-    altText: "Asanti Shores commercial diving stations, compressors, and marine equipment supply",
+    altText: "Asanti Shores Limited commercial diving stations, compressors, and marine equipment supply",
     overview: [
       "The maritime and offshore energy industries operate under rigorous safety margins and cannot afford unexpected machinery failures.",
       "Asanti Shores Limited provides marine equipment sales and procurement support, sourcing certified marine parts, safety supplies, and industrial components from reputable manufacturers.",
@@ -241,7 +241,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Ensuring your vessels are refueled with quality-tested marine fuels and replenished with clean potable water without operational delays.",
     image: "/images/projects/project-15.png",
-    altText: "Asanti Shores harbor vessel maneuvering and bunker logistics alongside",
+    altText: "Asanti Shores Limited harbor vessel maneuvering and bunker logistics alongside",
     overview: [
       "Fuel quality and water purity are fundamental to the safety of ship machinery and the health of the crew.",
       "Asanti Shores Limited facilitates compliant marine bunkering and fresh water supply operations across key Nigerian maritime terminals and anchorages.",
@@ -314,7 +314,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Optimizing vessel hydrodynamics, ensuring hull integrity, and providing accredited underwater survey documentation in Nigerian ports.",
     image: "/images/projects/project-2.png",
-    altText: "Asanti Shores certified commercial diving team, underwater hull cleaning and subsea inspections",
+    altText: "Asanti Shores Limited certified commercial diving team, underwater hull cleaning and subsea inspections",
     overview: [
       "Marine biofouling increases hull drag, spikes fuel consumption, and can obscure structural damage beneath the waterline.",
       "Asanti Shores Limited provides professional commercial diving and underwater engineering services to assist ship operators in maintaining hydrodynamic efficiency and meeting class survey requirements.",
@@ -388,7 +388,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Providing versatile, fit-for-purpose marine towage assets and deck cargo barges to support construction, shipping, and offshore energy projects.",
     image: "/images/projects/project-3.png",
-    altText: "Asanti Shores harbor tugboat and deck cargo barge transporting scrap metal and materials",
+    altText: "Asanti Shores Limited harbor tugboat and deck cargo barge transporting scrap metal and materials",
     overview: [
       "Moving heavy cargo, conducting rig moves, or assisting large commercial vessels through Nigerian coastal channels requires reliable, properly powered marine towage assets.",
       "Asanti Shores Limited provides tugboats and barges on spot-hire, short-term, or long-term charter agreements to maritime contractors, oil and gas operators, and civil engineering companies.",
@@ -461,7 +461,7 @@ export const servicesData: ServiceItem[] = [
     heroSubheadline:
       "Providing safe, dependable waterborne transit for personnel, light equipment, and offshore support across Nigerian port channels and oil fields.",
     image: "/images/projects/project-4.png",
-    altText: "Asanti Shores passenger ferry and high-speed service boats maintenance and logistics",
+    altText: "Asanti Shores Limited passenger ferry and high-speed service boats maintenance and logistics",
     overview: [
       "Timely transit of offshore personnel, marine pilots, survey teams, and express spare parts is vital to keeping marine and oilfield operations on schedule.",
       "Asanti Shores Limited provides service boat hire and integrated waterborne logistics across the busy maritime corridors of Lagos, the Niger Delta, and coastal oil facilities.",

@@ -96,7 +96,7 @@ export default function CapabilitiesPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/projects/project-3.png"
-            alt="Asanti Shores tugboat and marine logistics fleet"
+            alt="Asanti Shores Limited tugboat and marine logistics fleet"
             fill
             priority
             className="object-cover opacity-20 filter brightness-90"
@@ -127,7 +127,7 @@ export default function CapabilitiesPage() {
           <SectionHeading
             eyebrow="Marine Assets & Charter Logistics"
             title="Vessel Support & Charter Capabilities"
-            description="Through our managed network and strategic vessel charter partners, Asanti Shores provides commercial chartering and dispatch of fit-for-purpose maritime assets in Nigerian territorial waters."
+            description="Through our managed network and strategic vessel charter partners, Asanti Shores Limited provides commercial chartering and dispatch of fit-for-purpose maritime assets in Nigerian territorial waters."
             align="left"
           />
 
@@ -253,7 +253,7 @@ export default function CapabilitiesPage() {
               <div className="relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
                 <Image
                   src="/images/team/team-3.png"
-                  alt="Asanti Shores Managing Director and Field Operations Executives at corporate facility entrance"
+                  alt="Asanti Shores Limited Managing Director and Field Operations Executives at corporate facility entrance"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
                   className="object-cover object-top"

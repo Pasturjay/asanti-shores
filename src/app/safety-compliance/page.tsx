@@ -206,7 +206,7 @@ export default function SafetyCompliancePage() {
             <div className="lg:col-span-4 relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900">
               <Image
                 src="/images/team/team-4.png"
-                alt="Asanti Shores Field Operations Officer in full standard-issue personal protective equipment (PPE)"
+                alt="Asanti Shores Limited Field Operations Officer in full standard-issue personal protective equipment (PPE)"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover object-top"
@@ -231,7 +231,7 @@ export default function SafetyCompliancePage() {
               <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
                 <Image
                   src="/images/team/team-1.png"
-                  alt="Asanti Shores Managing Director and staff in company safety vests and hardhats"
+                  alt="Asanti Shores Limited Managing Director and staff in company safety vests and hardhats"
                   fill
                   sizes="(max-width: 1024px) 100vw, 66vw"
                   className="object-cover object-center"

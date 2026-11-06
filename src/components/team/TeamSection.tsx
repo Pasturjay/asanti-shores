@@ -57,7 +57,7 @@ export function TeamSection({ showFullGallery = true, theme = "light" }: TeamSec
                 <strong className="text-white block font-heading text-sm mb-0.5">
                   Managing Director & Field Executives
                 </strong>
-                Pictured at Asanti Shores corporate facility entrance
+                Pictured at Asanti Shores Limited corporate facility entrance
               </div>
             </div>
 
@@ -77,7 +77,7 @@ export function TeamSection({ showFullGallery = true, theme = "light" }: TeamSec
               </div>
 
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-light">
-                {md.bio} Under the Managing Director&apos;s direct leadership, Asanti Shores combines international maritime compliance with practical on-the-ground execution power, overseeing harbor logistics, offshore bunkering, vessel husbanding, and subsea diving spreads with zero compromise on safety.
+                {md.bio} Under the Managing Director&apos;s direct leadership, Asanti Shores Limited combines international maritime compliance with practical on-the-ground execution power, overseeing harbor logistics, offshore bunkering, vessel husbanding, and subsea diving spreads with zero compromise on safety.
               </p>
 
               {/* Leadership Pillars */}

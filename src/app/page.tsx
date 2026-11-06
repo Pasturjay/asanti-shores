@@ -171,7 +171,7 @@ export default function HomePage() {
               <div className="relative aspect-4/3 rounded-lg overflow-hidden shadow-2xl border border-slate-200">
                 <Image
                   src="/images/projects/project-10.png"
-                  alt="Asanti Shores field engineers and marine operations team at Lagos operational base"
+                  alt="Asanti Shores Limited field engineers and marine operations team at Lagos operational base"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -193,7 +193,7 @@ export default function HomePage() {
             {/* Right Column: Editorial Copy */}
             <div className="lg:col-span-6 space-y-6">
               <SectionHeading
-                eyebrow="About Asanti Shores"
+                eyebrow="About Asanti Shores Limited"
                 title="Supporting the Needs of the Maritime Industry"
                 description="A dedicated Nigerian marine services and logistics company operating across key coastal ports and offshore energy hubs."
                 align="left"
@@ -379,7 +379,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="On-Ground Presence"
             title="Hands-On Leadership & Certified Field Personnel"
-            description="Our operations are steered by experienced maritime directors and executed by trained, safety-certified personnel in branded Asanti Shores PPE across Lagos, Onne, and Delta ports."
+            description="Our operations are steered by experienced maritime directors and executed by trained, safety-certified personnel in branded Asanti Shores Limited PPE across Lagos, Onne, and Delta ports."
             align="center"
           />
 
@@ -388,7 +388,7 @@ export default function HomePage() {
             <div className="lg:col-span-5 relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
               <Image
                 src="/images/team/team-3.png"
-                alt="Asanti Shores Managing Director and Field Operations Personnel at corporate facility entrance"
+                alt="Asanti Shores Limited Managing Director and Field Operations Personnel at corporate facility entrance"
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
                 className="object-cover object-top"
@@ -416,7 +416,7 @@ export default function HomePage() {
               <div className="relative h-60 sm:h-72 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
                 <Image
                   src="/images/team/team-1.png"
-                  alt="Asanti Shores Operations Crew in official branded safety vests and helmets"
+                  alt="Asanti Shores Limited Operations Crew in official branded safety vests and helmets"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-cover object-center"

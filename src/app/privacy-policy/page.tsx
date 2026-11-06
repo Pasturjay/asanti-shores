@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
                 1. Introduction
               </h2>
               <p>
-                {siteConfig.legalName} (&quot;Asanti Shores&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) respects your privacy and is committed to protecting the commercial information and personal data you provide when interacting with our website ({siteConfig.url}) and operational enquiry channels.
+                {siteConfig.legalName} (&quot;Asanti Shores Limited&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) respects your privacy and is committed to protecting the commercial information and personal data you provide when interacting with our website ({siteConfig.url}) and operational enquiry channels.
               </p>
             </div>
 
