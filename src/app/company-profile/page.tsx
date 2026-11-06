@@ -19,6 +19,8 @@ import {
   LifeBuoy,
   Scale,
   Award,
+  Users,
+  HardHat,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -291,7 +293,88 @@ export default function CompanyProfilePage() {
         </div>
       </section>
 
-      {/* 4. HEALTH, SAFETY & STATUTORY GOVERNANCE */}
+      {/* 4. CORPORATE GOVERNANCE & OPERATIONS LEADERSHIP */}
+      <section className="py-20 bg-white border-b border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left Column: MD Spotlight Portrait */}
+            <div className="lg:col-span-5 relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+              <Image
+                src="/images/team/team-3.png"
+                alt="Asanti Shores Limited Managing Director and Field Operations Executives at Corporate Entrance"
+                fill
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-[#0B1F33]/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xs bg-[#D9A441] text-[#0B1F33] text-xs font-bold uppercase tracking-wider shadow-md">
+                  <Award className="w-3.5 h-3.5" />
+                  <span>Executive Governance</span>
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-sm bg-[#0B1F33]/95 backdrop-blur-xs border border-slate-700 text-white space-y-1">
+                <h4 className="font-heading font-bold text-sm text-white">
+                  Managing Director & Field Executives
+                </h4>
+                <p className="text-xs text-slate-300">
+                  Direct operational command across Nigerian territorial waters, ports, and offshore terminals.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: Narrative & Crew Banner */}
+            <div className="lg:col-span-7 space-y-6">
+              <SectionHeading
+                eyebrow="Executive Governance"
+                title="Field-Ready Leadership & On-Ground Operational Force"
+                description="Asanti Shores Limited pairs experienced corporate directorship with a disciplined, safety-certified workforce deployed daily in official company PPE."
+                align="left"
+              />
+
+              <p className="text-sm sm:text-base text-[#596979] leading-relaxed">
+                The management team is spearheaded by the Managing Director, whose hands-on approach ensures direct liaison with the Nigerian Maritime Administration and Safety Agency (NIMASA), Nigerian Ports Authority (NPA), and terminal operators.
+              </p>
+
+              {/* Group Banner */}
+              <div className="relative h-56 sm:h-64 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <Image
+                  src="/images/team/team-1.png"
+                  alt="Asanti Shores Operations Team in Branded Company Workwear and Hardhats"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-transparent to-transparent" />
+                <div className="absolute top-3 left-3">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xs bg-[#0B1F33]/90 text-[#D9A441] border border-slate-700 text-[11px] font-bold uppercase tracking-wider">
+                    <Users className="w-3 h-3" />
+                    <span>Operations & Technical Crew</span>
+                  </span>
+                </div>
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <p className="text-xs font-semibold text-white">
+                    100% PPE-compliant personnel ready for vessel husbanding, diving, and bunker transfer dispatch.
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs text-[#0B1F33] font-semibold">
+                <div className="flex items-center gap-2 p-3 rounded-md bg-[#F3F6F8] border border-slate-200">
+                  <CheckCircle2 className="w-4 h-4 text-[#D9A441] shrink-0" />
+                  <span>Direct Executive Accountability</span>
+                </div>
+                <div className="flex items-center gap-2 p-3 rounded-md bg-[#F3F6F8] border border-slate-200">
+                  <CheckCircle2 className="w-4 h-4 text-[#D9A441] shrink-0" />
+                  <span>24/7 Rapid Port Mobilization</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. HEALTH, SAFETY & STATUTORY GOVERNANCE */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

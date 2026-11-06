@@ -20,6 +20,9 @@ import {
   FileCheck,
   ChevronRight,
   Flame,
+  Users,
+  HardHat,
+  Award,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { servicesData } from "@/config/services";
@@ -370,7 +373,106 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. CAPABILITIES & OPERATIONAL HUBS */}
+      {/* 7. OPERATIONS LEADERSHIP & FIELD WORKFORCE */}
+      <section className="py-20 lg:py-24 bg-[#F3F6F8] border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="On-Ground Presence"
+            title="Hands-On Leadership & Certified Field Personnel"
+            description="Our operations are steered by experienced maritime directors and executed by trained, safety-certified personnel in branded Asanti Shores PPE across Lagos, Onne, and Delta ports."
+            align="center"
+          />
+
+          <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            {/* Left: MD & Staff Feature */}
+            <div className="lg:col-span-5 relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+              <Image
+                src="/images/team/team-3.png"
+                alt="Asanti Shores Managing Director and Field Operations Personnel at corporate facility entrance"
+                fill
+                sizes="(max-width: 1024px) 100vw, 42vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-[#0B1F33]/20 to-transparent" />
+              <div className="absolute top-4 left-4">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xs bg-[#D9A441] text-[#0B1F33] text-xs font-bold uppercase tracking-wider shadow-md">
+                  <Award className="w-3.5 h-3.5" />
+                  <span>Executive Leadership</span>
+                </span>
+              </div>
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-sm bg-[#0B1F33]/95 backdrop-blur-xs border border-slate-700 text-white space-y-1">
+                <h4 className="font-heading font-bold text-sm text-white">
+                  Managing Director & Field Executives
+                </h4>
+                <p className="text-xs text-slate-300">
+                  Direct operational oversight and proactive port authority liaison at Defense Jetty, Marina and Kirikiri.
+                </p>
+              </div>
+            </div>
+
+            {/* Right: Operations Team Banner + Value Points */}
+            <div className="lg:col-span-7 space-y-6">
+              {/* Full Crew Banner */}
+              <div className="relative h-60 sm:h-72 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <Image
+                  src="/images/team/team-1.png"
+                  alt="Asanti Shores Operations Crew in official branded safety vests and helmets"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xs bg-[#0B1F33]/90 text-[#D9A441] border border-slate-700 text-xs font-bold uppercase tracking-wider">
+                    <Users className="w-3.5 h-3.5" />
+                    <span>Unified Operations Crew</span>
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-xs font-semibold text-white">
+                    Equipped with custom high-visibility safety workwear and industrial headgear for 100% field compliance.
+                  </p>
+                </div>
+              </div>
+
+              {/* Core Strengths */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 rounded-md bg-white border border-slate-200 shadow-xs">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33] mb-1">
+                    <HardHat className="w-4 h-4 text-[#D9A441]" />
+                    <span>Safety-First Execution</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    Mandatory PPE compliance, pre-task tool box talks, and empowered Stop Work Authority across every deployment.
+                  </p>
+                </div>
+
+                <div className="p-4 rounded-md bg-white border border-slate-200 shadow-xs">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33] mb-1">
+                    <ShieldCheck className="w-4 h-4 text-[#167D91]" />
+                    <span>Verified Qualifications</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    STCW-certified seafarers, class-approved commercial divers, and experienced marine logistics officers.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                <Button href="/about" variant="navy" size="md">
+                  <span>Learn About Our People & Leadership</span>
+                  <ArrowRight className="w-4 h-4 ml-1.5" />
+                </Button>
+                <Button href="/safety-compliance" variant="outline" size="md">
+                  View Safety Standards
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. CAPABILITIES & OPERATIONAL HUBS */}
       <section className="py-20 lg:py-28 bg-[#0B1F33] text-white relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#167D91]/10 rounded-full blur-3xl pointer-events-none" />

@@ -14,6 +14,8 @@ import {
   CheckCircle2,
   ArrowRight,
   ShieldCheck,
+  Users,
+  HardHat,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -238,16 +240,66 @@ export default function CapabilitiesPage() {
       {/* 4. Technical Personnel & Operational Standards */}
       <section className="py-20 bg-[#F3F6F8] border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-6 space-y-6">
-              <SectionHeading
-                eyebrow="Human Capital & Standards"
-                title="Qualified Marine Personnel & Technical Supervisors"
-                description="Our marine services are underpinned by experienced professionals with hands-on command of Nigerian coastal waterways and international maritime standards."
-                align="left"
-              />
+          <SectionHeading
+            eyebrow="Human Capital & Standards"
+            title="Qualified Marine Personnel & Technical Supervisors"
+            description="Our marine services are underpinned by experienced professionals with hands-on command of Nigerian coastal waterways and international maritime standards."
+            align="center"
+          />
 
-              <div className="space-y-3.5 text-sm text-[#596979]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mt-12 items-center">
+            {/* Left: MD & Staff Portrait Feature */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900">
+                <Image
+                  src="/images/team/team-3.png"
+                  alt="Asanti Shores Managing Director and Field Operations Executives at corporate facility entrance"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-transparent to-transparent" />
+                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-sm bg-[#0B1F33]/95 backdrop-blur-xs border border-slate-700 text-white space-y-1.5">
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#D9A441]">
+                    Field Leadership & Management
+                  </span>
+                  <h4 className="font-heading font-bold text-sm text-white">
+                    Managing Director & Operations Supervision
+                  </h4>
+                  <p className="text-xs text-slate-300">
+                    Direct on-the-ground presence across Lagos ports, Defense Jetty Marina, and offshore terminal transfers.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Technical Capabilities & Full Crew Banner */}
+            <div className="lg:col-span-7 space-y-6">
+              {/* Full Crew Banner */}
+              <div className="relative h-60 sm:h-72 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <Image
+                  src="/images/team/team-1.png"
+                  alt="Asanti Shores Limited Operations Personnel in official branded PPE"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 58vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xs bg-[#0B1F33]/90 text-[#D9A441] border border-slate-700 text-xs font-bold uppercase tracking-wider">
+                    <Users className="w-3.5 h-3.5" />
+                    <span>Dedicated Technical Workforce</span>
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-xs font-semibold text-white">
+                    Field-ready supervisors, riggers, and vessel coordinators in certified company work gear.
+                  </p>
+                </div>
+              </div>
+
+              {/* Verified Competencies */}
+              <div className="space-y-3.5 text-sm text-[#596979] bg-white p-6 rounded-lg border border-slate-200">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#D9A441] shrink-0 mt-0.5" />
                   <div>
@@ -271,21 +323,14 @@ export default function CapabilitiesPage() {
                 </div>
               </div>
 
-              <div className="pt-2">
+              <div className="pt-2 flex flex-wrap items-center gap-4">
                 <Button href="/request-a-quote" variant="primary" size="md">
                   Request Capability Proposal
                 </Button>
+                <Button href="/about" variant="outline" size="md">
+                  Meet Our Leadership & Team
+                </Button>
               </div>
-            </div>
-
-            <div className="lg:col-span-6 relative aspect-4/3 rounded-lg overflow-hidden shadow-xl border border-slate-200">
-              <Image
-                src="/images/projects/project-10.png"
-                alt="Asanti Shores on-site engineering team and diving supervisors at Defense Jetty Marina"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
             </div>
           </div>
         </div>

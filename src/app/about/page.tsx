@@ -16,6 +16,7 @@ import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
 import { Button } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TeamSection } from "@/components/team/TeamSection";
 
 export const metadata: Metadata = {
   title: "About Asanti Shores Limited | Maritime Services & Logistics",
@@ -220,6 +221,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Leadership & Operations Personnel */}
+      <TeamSection showFullGallery={true} theme="gray" />
 
       {/* Conversion Banner */}
       <section className="py-16 bg-[#0B1F33] text-white text-center">

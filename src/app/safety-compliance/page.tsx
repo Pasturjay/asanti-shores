@@ -11,6 +11,8 @@ import {
   Leaf,
   Scale,
   Award,
+  HardHat,
+  Users,
 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Breadcrumb } from "@/components/ui/Breadcrumb";
@@ -182,6 +184,113 @@ export default function SafetyCompliancePage() {
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-[#596979]">
                 <span>Document: ASL-HSE-POL-01</span>
                 <span className="font-semibold text-[#0B1F33]">Reviewed Annually</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Field PPE Standards & On-Site Safety Culture */}
+      <section className="py-20 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="Safety In Action"
+            title="Field PPE Compliance & On-Site Operational Rigor"
+            description="Our safety commitment is demonstrated daily in the field. From our Managing Director to frontline riggers and commercial divers, every team member adheres to 100% Personal Protective Equipment (PPE) standards across all Nigerian terminals."
+            align="center"
+          />
+
+          {/* Featured Field PPE Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-12 items-center">
+            {/* Left: Officer Full-Length PPE Portrait */}
+            <div className="lg:col-span-4 relative aspect-3/4 sm:aspect-4/5 rounded-xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900">
+              <Image
+                src="/images/team/team-4.png"
+                alt="Asanti Shores Field Operations Officer in full standard-issue personal protective equipment (PPE)"
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/90 via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-sm bg-[#0B1F33]/95 backdrop-blur-xs border border-slate-700 text-white space-y-1">
+                <span className="text-[10px] uppercase font-bold tracking-wider text-[#D9A441]">
+                  Field Verification
+                </span>
+                <h4 className="font-heading font-bold text-sm text-white">
+                  Standard-Issue Field PPE
+                </h4>
+                <p className="text-[11px] text-slate-300">
+                  Branded high-vis vest, ANSI impact hardhat, eye protection, and safety footwear mandatory on all jetties.
+                </p>
+              </div>
+            </div>
+
+            {/* Right: Operations Team Group in PPE + Protocol Checklist */}
+            <div className="lg:col-span-8 space-y-6">
+              {/* Group Banner */}
+              <div className="relative h-64 sm:h-72 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+                <Image
+                  src="/images/team/team-1.png"
+                  alt="Asanti Shores Managing Director and staff in company safety vests and hardhats"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 66vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/85 via-transparent to-transparent" />
+                <div className="absolute top-4 left-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xs bg-[#0B1F33]/90 text-[#D9A441] border border-slate-700 text-xs font-bold uppercase tracking-wider">
+                    <Users className="w-3.5 h-3.5" />
+                    <span>Managing Director & Operations Staff</span>
+                  </span>
+                </div>
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <p className="text-xs font-bold tracking-wide text-white">
+                    Asanti Shores Limited Field Workforce — Defense Jetty, Marina & Kirikiri Base
+                  </p>
+                </div>
+              </div>
+
+              {/* PPE Standards Breakdown */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-5 rounded-lg bg-[#F3F6F8] border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33]">
+                    <HardHat className="w-4 h-4 text-[#D9A441]" />
+                    <span>High-Visibility & Head Protection</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    Custom retroreflective Class 2/3 company vests with reinforced utility storage, paired with industrial impact-absorbing safety hardhats conforming to ANSI Z89.1 / EN 397.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-lg bg-[#F3F6F8] border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33]">
+                    <ShieldCheck className="w-4 h-4 text-[#167D91]" />
+                    <span>Empowered Stop Work Authority</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    Zero compromise: every supervisor, deckhand, and commercial diver has full authority to pause operations immediately upon identifying non-compliant gear or sea condition hazards.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-lg bg-[#F3F6F8] border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33]">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    <span>Mandatory Tool Box Talks (TBT)</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    Prior to vessel boarding, bunkering hookup, or diving launch, a formal briefing is documented with weather assessment, PPE inspection, and emergency evacuation drills.
+                  </p>
+                </div>
+
+                <div className="p-5 rounded-lg bg-[#F3F6F8] border border-slate-200 space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0B1F33]">
+                    <Award className="w-4 h-4 text-[#D9A441]" />
+                    <span>NIMASA & Port Health Alignment</span>
+                  </div>
+                  <p className="text-xs text-[#596979] leading-relaxed">
+                    All crew deployments undergo verified medical screening, yellow card health clearances, and valid STCW endorsements verified against statutory maritime databases.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
