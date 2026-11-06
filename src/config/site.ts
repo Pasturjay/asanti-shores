@@ -12,9 +12,51 @@ export const siteConfig = {
   
   // Contact details (Configurable via environment variables)
   contact: {
-    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "operations@asantishores.com",
-    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+234 803 300 1234",
-    phoneDisplay: "+234 (0) 803 300 1234",
+    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "asantishores@gmail.com",
+    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+234 916 259 9586",
+    phoneDisplay: "+234 916 259 9586",
+    phones: [
+      {
+        raw: "09162599586",
+        number: "+2349162599586",
+        display: "0916 259 9586",
+        intl: "+234 916 259 9586",
+        label: "24/7 Operations Desk & WhatsApp",
+        isPrimary: true,
+      },
+      {
+        raw: "08176840868",
+        number: "+2348176840868",
+        display: "0817 684 0868",
+        intl: "+234 817 684 0868",
+        label: "Marine Logistics & Fleet",
+        isPrimary: false,
+      },
+      {
+        raw: "08146463163",
+        number: "+2348146463163",
+        display: "0814 646 3163",
+        intl: "+234 814 646 3163",
+        label: "Port Husbandry & Clearance",
+        isPrimary: false,
+      },
+      {
+        raw: "07071536801",
+        number: "+2347071536801",
+        display: "0707 153 6801",
+        intl: "+234 707 153 6801",
+        label: "Technical & Commercial Diving",
+        isPrimary: false,
+      },
+      {
+        raw: "09124219902",
+        number: "+2349124219902",
+        display: "0912 421 9902",
+        intl: "+234 912 421 9902",
+        label: "Procurement & Chandling",
+        isPrimary: false,
+      },
+    ],
     address: {
       street: "Shop 04, Prowa International Shopping Complex, Opp. Kirikiri Police Station",
       town: "Kirikiri Town",
@@ -27,7 +69,7 @@ export const siteConfig = {
     operatingHours: "Monday – Saturday: 08:00 – 18:00 (24/7 On-Call Marine Coordination)",
     whatsapp: {
       enabled: true,
-      number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2348033001234",
+      number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "2349162599586",
       defaultMessage: "Hello Asanti Shores, I would like to make an enquiry regarding marine services.",
     },
   },

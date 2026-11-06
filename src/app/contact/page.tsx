@@ -89,16 +89,23 @@ export default function ContactPage() {
 
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-[#D9A441] shrink-0 mt-0.5" />
-                    <div>
-                      <strong className="block text-white text-xs uppercase tracking-wider mb-0.5">
-                        24/7 Operations Telephone:
+                    <div className="w-full">
+                      <strong className="block text-white text-xs uppercase tracking-wider mb-1.5">
+                        Operational Phone Numbers:
                       </strong>
-                      <a
-                        href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
-                        className="text-slate-200 hover:text-[#D9A441] font-mono text-sm"
-                      >
-                        {siteConfig.contact.phoneDisplay}
-                      </a>
+                      <div className="space-y-1.5">
+                        {siteConfig.contact.phones.map((phone) => (
+                          <div key={phone.raw} className="flex items-center justify-between text-xs py-0.5 border-b border-slate-700/50 last:border-0">
+                            <span className="text-slate-400 text-[11px]">{phone.label}</span>
+                            <a
+                              href={`tel:${phone.number}`}
+                              className="text-slate-200 hover:text-[#D9A441] font-mono font-semibold"
+                            >
+                              {phone.display}
+                            </a>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
 
@@ -110,7 +117,7 @@ export default function ContactPage() {
                       </strong>
                       <a
                         href={`mailto:${siteConfig.contact.email}`}
-                        className="text-slate-200 hover:text-[#D9A441] text-sm"
+                        className="text-slate-200 hover:text-[#D9A441] text-sm font-semibold"
                       >
                         {siteConfig.contact.email}
                       </a>

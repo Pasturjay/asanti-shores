@@ -216,20 +216,25 @@ export function Footer() {
                   Defense Jetty, Marina, Lagos State, Nigeria
                 </div>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#D9A441] shrink-0" />
-                <a
-                  href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
-                  className="text-slate-300 hover:text-white transition-colors font-mono"
-                >
-                  {siteConfig.contact.phoneDisplay}
-                </a>
+              <div className="flex items-start gap-2.5">
+                <Phone className="w-4 h-4 text-[#D9A441] shrink-0 mt-0.5" />
+                <div className="text-xs">
+                  <a
+                    href={`tel:${siteConfig.contact.phone.replace(/\s+/g, "")}`}
+                    className="text-slate-200 hover:text-white transition-colors font-mono font-semibold block"
+                  >
+                    {siteConfig.contact.phoneDisplay}
+                  </a>
+                  <span className="text-[11px] text-slate-400 block mt-0.5">
+                    Alt: 0817 684 0868 / 0814 646 3163
+                  </span>
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#167D91] shrink-0" />
                 <a
                   href={`mailto:${siteConfig.contact.email}`}
-                  className="text-slate-300 hover:text-white transition-colors"
+                  className="text-slate-300 hover:text-white transition-colors font-medium text-xs sm:text-sm"
                 >
                   {siteConfig.contact.email}
                 </a>

@@ -74,10 +74,10 @@ cp .env.example .env.local
 Configure your parameters:
 ```env
 NEXT_PUBLIC_SITE_URL="https://asantishores.com"
-NEXT_PUBLIC_CONTACT_EMAIL="operations@asantishores.com"
-NEXT_PUBLIC_CONTACT_PHONE="+234 803 300 1234"
-NEXT_PUBLIC_WHATSAPP_NUMBER="2348033001234"
-CONTACT_RECIPIENT_EMAIL="operations@asantishores.com"
+NEXT_PUBLIC_CONTACT_EMAIL="asantishores@gmail.com"
+NEXT_PUBLIC_CONTACT_PHONE="+234 916 259 9586"
+NEXT_PUBLIC_WHATSAPP_NUMBER="2349162599586"
+CONTACT_RECIPIENT_EMAIL="asantishores@gmail.com"
 
 # Optional: Add Resend API key for automatic transactional email dispatch
 RESEND_API_KEY="re_..."
@@ -110,5 +110,5 @@ npm run start
 - **Tax Identification Number (TIN):** 31273907-0001
 - **Incorporation Date:** January 12, 2023
 - **Registered Address:** Shop 04, Prowa International Shopping Complex, Opp. Kirikiri Police Station, Kirikiri Town, Lagos, Nigeria
-- **Operations Contact:** `operations@asantishores.com` | `+234 (0) 803 300 1234`
+- **Operations Contact:** `asantishores@gmail.com` | `+234 916 259 9586` / `+234 817 684 0868`
 - **Supported Operational Ports:** Lagos Port Complex (Apapa), Tin Can Island, Kirikiri Lighter Terminal, Onne Port & Free Zone, Port Harcourt Commercial Port, Warri Port Complex, Calabar Port, and Offshore Gulf of Guinea Terminals.

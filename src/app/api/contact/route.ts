@@ -70,7 +70,7 @@ export async function POST(req: NextRequest) {
     const recipientEmail =
       process.env.CONTACT_RECIPIENT_EMAIL ||
       process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
-      "operations@asantishores.com";
+      "asantishores@gmail.com";
 
     const contactRecord = {
       id: `CNT-${Date.now()}-${Math.floor(Math.random() * 1000)}`,
