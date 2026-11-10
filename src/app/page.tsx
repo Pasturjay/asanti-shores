@@ -627,7 +627,7 @@ export default function HomePage() {
                   Download Official Company Profile
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
-                  Access our verified company registration particulars (RC: {siteConfig.rcNumber}), service capabilities, equipment directory, and compliance commitments in a single document.
+                  Access our verified company registration particulars (RC: {siteConfig.rcNumber}), SCUML certification, NIWA vessel permits, seven core service lines, and fleet directory in an official 5-page PDF document.
                 </p>
               </div>
 
