@@ -242,7 +242,7 @@ export default function CompanyProfilePage() {
                 className="inline-flex items-center gap-2 bg-[#D9A441] text-[#0B1F33] hover:bg-[#C49132] font-bold text-sm px-7 py-3.5 rounded-sm shadow-md transition-all active:scale-[0.98]"
               >
                 <Download className="w-4 h-4" />
-                <span>Download Official PDF Profile (5 Pages)</span>
+                <span>Download Official Profile Dossier (PDF)</span>
               </a>
 
               <Button href="/request-a-quote" variant="outline" size="lg" className="border-slate-400 text-white hover:bg-white hover:text-[#0B1F33]">
@@ -793,7 +793,7 @@ export default function CompanyProfilePage() {
           </h2>
 
           <p className="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Access our verified statutory registrations (RC: {siteConfig.rcNumber}), SCUML registration (RN: SC 251825806), NIWA permits, fleet directory, and QHSE policies in an authoritative 5-page PDF document.
+            Access our verified statutory registrations (RC: {siteConfig.rcNumber}), SCUML registration (RN: SC 251825806), NIWA permits, CAC certified records, fleet directory, and QHSE policies in our complete official corporate dossier.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
